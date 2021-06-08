@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; 
 import './../style/App.css'
+import { useHistory } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo1 from './../images/i13.jpeg'
@@ -15,6 +16,12 @@ import Logo9 from './../images/i16.jpeg'
 import BLOG from './blog'
 
 function Shop(){
+    const history = useHistory();
+
+    function handleClick() {
+
+        history.push("/Car");
+      }
     return(
 <div className = "shoppage">
     <div className="heading">
@@ -27,6 +34,7 @@ function Shop(){
   <a className="btn btn-large btn-dark" href="/">BLOG</a>
 {/* <button className="btn1">BLOG</button> */}
 <a className="btn btn-large btn-dark" href="/">LOGOUT</a>
+<a className="btn btn-large btn-dark" href="/Car">Cart</a>
 
   </div>
 
@@ -44,25 +52,25 @@ function Shop(){
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
 
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
 
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
 
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
  </div>
 
@@ -78,25 +86,25 @@ function Shop(){
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
 
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
 
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
 
 <div id="s1">
     <h3>painting work</h3>
     <p id="sty1">$22.45</p>
-    <button id="bttn2">Add to Cart</button>
+    <button id="bttn2" onClick={handleClick}>Add to Cart</button>
 </div>
  </div>
 

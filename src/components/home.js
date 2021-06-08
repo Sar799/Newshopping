@@ -11,6 +11,7 @@ import Logo5 from './../images/i8.jpg'
 import Logo6 from './../images/i11.JPG'
 import BLOG from './blog'
 
+
 function Home() {
   return (
 <div className = "mainpagetext">

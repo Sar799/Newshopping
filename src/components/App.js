@@ -12,6 +12,7 @@ import Home from "./home"
 import Shop from './shop'
 import Course from './course'
 import BLOG from './blog'
+import Car from './Car'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       style={{ minHeight: "100vh" }}
     >
       <div >
+        
         <Router>
           <AuthProvider>
             <Switch>
@@ -28,10 +30,11 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
-              <Route path="/home" component={Home} />
-              <Route path="/shop" component={Shop} />
-              <Route path="/course" component={Course} />
-              <Route path="/blog" component={BLOG}    />
+              <PrivateRoute path="/home" component={Home} />
+              <PrivateRoute path="/shop" component={Shop} />
+              <PrivateRoute path="/course" component={Course} />
+              <PrivateRoute path="/blog" component={BLOG}    />
+              <PrivateRoute path="/Car" component={Car} />
             </Switch>
           </AuthProvider>
         </Router>

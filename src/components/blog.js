@@ -13,7 +13,16 @@ function BLOG() {
        <p className="bloghead">Blog</p> 
    </div>
 </div> 
+<div className="head2">
+  <div className="nav">
 
+  <a className="btn btn-large btn-dark" href="/home">HOME</a>
+{/* <button className="btn1">BLOG</button> */}
+<a className="btn btn-large btn-dark" href="/">LOGOUT</a>
+<a className="btn btn-large btn-dark" href="/Car">Cart</a>
+
+  </div>
+  </div>
 
 
 
